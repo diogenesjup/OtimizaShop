@@ -40,7 +40,7 @@ CSS GRID
 .wow {
    visibility: hidden;
 }
-::selection { background: #757575; color: #fff; } ::-moz-selection { background: #757575; color: #fff; }
+::selection { background: #FA7923; color: #fff; } ::-moz-selection { background: #FA7923; color: #fff; }
 
 
 .text-center{
@@ -51,6 +51,10 @@ CSS GRID
   text-align: right;
 }
 
+a{
+  text-decoration: none;
+}
+
 img{
   max-width: 100%;
   height: auto;
@@ -58,5 +62,277 @@ img{
 
 
 /*---------------------------------
-	OUTROS ESTILOS
+	HEADER
 -----------------------------------*/
+header{
+  position: relative;
+  display: block;
+  background: #fff;
+}
+
+header .barra-topo{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #EBEBEC;
+  padding-top: 7px;
+  padding-bottom: 9px;
+}
+
+header .barra-topo p{
+   margin: 0px;
+   padding:0px;
+   color:#000000;
+   font-size:13px;
+}
+
+header .barra-topo p b{
+  font-weight: bold;
+  font-style:oblique;
+}
+
+header .barra-topo p a,
+header .barra-topo p a:hover{
+   color:#000000;
+   text-decoration: none;
+   padding-left: 8px;
+}
+
+
+header .logo-busca-minha-conta{
+  position:relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  background:#FA7923;
+  padding-top: 22px;
+  padding-bottom: 16px;
+  color:#fff;
+}
+
+header .logo-busca-minha-conta .logo img{
+  width: 90%;
+  height: auto;
+  margin-top: -4px;
+}
+
+
+header .busca{
+
+}
+
+header .busca .input-group{
+  width: 90%;
+}
+
+header .busca .form-control{
+  font-size:14px;
+  font-family: 'Open Sans', sans-serif;
+  outline:none !important;
+  box-shadow: none !important;
+  border-right:none !important;
+  height: 43px;
+}
+header .busca .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color:#B5B5B5;
+}
+
+header .busca .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#B5B5B5;
+}
+
+header .busca .form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color:#B5B5B5;
+}
+
+header .busca .btn.btn-outline-secondary{
+  height: 43px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-left: none;
+}
+
+header .busca .btn.btn-outline-secondary img{
+  margin-top:-3px;
+}
+
+
+
+header .minha-conta-carrinho{
+
+}
+
+
+header .minha-conta-carrinho h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 3px;
+}
+
+
+header .minha-conta-carrinho h2 img{
+    float: left;
+    margin-right: 9px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    width: 35px;
+}
+
+
+header .minha-conta-carrinho h2 a,
+header .minha-conta-carrinho h2 a:hover{
+ font-weight: bold;
+ color:#fff !important;
+ text-decoration: none !important;
+}
+
+
+header .carrinho-header img{
+  width:40px;
+  height: auto;
+}
+
+header .menu-desktop{
+  text-align: center;
+}
+
+header .menu-desktop nav {
+  margin: 9px 0;
+}
+
+header .menu-desktop nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+  
+header .menu-desktop nav ul li {
+  display:inline-block;
+}
+
+header .menu-desktop nav a {
+    display: block;
+    padding: 0px 12px;
+    color: #000;
+    font-size: 14px;
+    line-height: 40px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-style: oblique;
+    -webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;
+}
+/*
+header .menu-desktop nav a:hover{
+  color:#FA7923;
+}
+*/
+header .menu-desktop nav a.last{
+  font-weight: bold;
+  font-style: oblique;
+}
+
+header .menu-desktop nav a i{
+  padding-left: 8px;
+}
+
+/*
+header .menu-desktop nav a:hover { 
+  background-color: #000000; 
+}
+*/
+
+/* Hide Dropdowns by Default */
+header .menu-desktop nav ul ul {
+    display: none;
+    position: absolute;
+    top: 48px;
+    /* left: 0; */
+    margin-left: -8px;
+    background: #f7f7f7;
+    padding: 16px;
+    text-align: left;
+    /* line-height: 24px; */
+}
+  
+/* Display Dropdowns on Hover */
+header .menu-desktop nav ul li:hover > ul {
+  display:block;
+}
+
+  
+/* Fisrt Tier Dropdown */
+header .menu-desktop nav ul ul li {
+  width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+}
+
+
+header .menu-desktop nav ul ul li a,
+header .menu-desktop nav ul ul li a:hover{
+  color: #777777;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: none;
+  font-weight: 600;
+  line-height: 27px !important;
+}
+
+
+/* Second, Third and more Tiers */
+header .menu-desktop nav ul ul ul li {
+  position: relative;
+  top:-60px; 
+  left:170px;
+}
+
+
+header .call-to-action{
+    background: #EBEBEC;
+    padding-top: 15px;
+    padding-bottom: 13px;
+}
+
+header .call-to-action h3{
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+header .call-to-action h3 a,
+header .call-to-action h3 a:hover{ 
+  color:#000;
+  text-decoration: none;
+}
+
+header .call-to-action h3 img{
+    width: 26px;
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------
+  OUTROS ESTILOS
+-----------------------------------*/
+
+
+
+
+
+
