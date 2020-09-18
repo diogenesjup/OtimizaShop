@@ -68,8 +68,9 @@ ysyss
 
 <!-- ANIMATE -->
 <link rel="stylesheet" type="text/css" href="css/animate.css">
-<!-- DROPDOWN -->
-<link href="css/bootstrap-dropdownhover.css" rel="stylesheet">
+
+<!-- OWL -->
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- 
    font-family: 'Open Sans', sans-serif;
@@ -79,6 +80,66 @@ ysyss
 </head>
 <body>
 
+
+<!-- SIDEMEU -->
+<div class="sidemenu">
+    
+    <!-- FECHAR -->
+    <div class="fechar">
+        <a href="javascript:void(0)" title="fechar menu categorias" onclick="abrirFecharSideMenu();">
+            <img src="images/fechar.svg" alt="fechar" />
+        </a>
+    </div>
+    <!-- FECHAR -->
+
+    <div class="apenas-mobile">
+        
+        <p>&nbsp;</p>
+        <h2>
+            <img src="images/favicon.png" alt="OtimizaShop símbolo" /> FALE COM A GENTE
+        </h2>
+
+        <nav>
+                <ul>
+                    <li><a href="#">Atendimento</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                </ul>
+        </nav>
+        <p>&nbsp;</p>
+        
+    </div>
+
+    <h2>
+        <img src="images/favicon.png" alt="OtimizaShop símbolo" /> TODAS AS CATEGORIAS
+    </h2>
+
+                    <nav>
+                        <ul>
+                            <li><a href="#">CICLISMO</a></li>
+                            <li><a href="#">CORRIDA</a></li>
+                            <li><a href="#">ACADEMIA</a></li>
+                            <li><a href="#">FUTEBOL</a></li>
+                            <li><a href="#">GAMES</a></li>
+                            <li><a href="#">ELETRONICOS</a></li>
+                            <li><a href="#">YOGA</a></li>
+                            <li><a href="#">SURFE</a></li>
+                            <li><a href="#">VÔLEI</a></li>
+                            <li><a href="#">ESCALADA</a></li>
+                            <li><a href="#">DIA DOS PAIS</a></li>
+                            <li><a href="#">CICLISMO</a></li>
+                            <li><a href="#">CORRIDA</a></li>
+                            <li><a href="#">ACADEMIA</a></li>
+                            <li><a href="#">FUTEBOL</a></li>
+                            <li><a href="#">GAMES</a></li>
+                            <li><a href="#">ELETRONICOS</a></li>
+                            <li><a href="#">YOGA</a></li>
+                            <li><a href="#">SURFE</a></li>
+                            <li><a href="#">VÔLEI</a></li>
+                            <li><a href="#">ESCALADA</a></li>
+                            <li><a href="#">DIA DOS PAIS</a></li>  
+                        </ul>
+                    </nav>
+</div>
 
 <!-- HEADER -->
 <header>
@@ -167,18 +228,22 @@ ysyss
                             <li><a href="#" title="Home">Home</a></li>
                             <li><a href="#">CICLISMO</a></li>
                             <li><a href="#">CORRIDA</a></li>
+                            <li><a href="#">SKY</a></li>
+                            <li><a href="#">42</a></li>
                             <li><a href="#">ACADEMIA</a></li>
                             <li><a href="#">FUTEBOL</a></li>
                             <li><a href="#">GAMES</a></li>
-                            <li><a href="#">ELETRONICOS</a></li>
                             <li><a href="#">YOGA</a></li>
                             <li><a href="#">SURFE</a></li>
                             <li><a href="#">VÔLEI</a></li>
                             <li><a href="#">ESCALADA</a></li>
                             <li><a href="#">DIA DOS PAIS</a></li>
                             
-                            <li><a href="#" title="TODAS AS CATEGORIAS" class="last">TODAS AS CATEGORIAS <i class="fa fa-bars"></i></a>
-                            </li>
+                            <li><a href="javascript:void(0)" onclick="abrirFecharSideMenu()" title="TODAS AS CATEGORIAS" class="last">TODAS AS CATEGORIAS <i class="fa fa-bars"></i></a>
+                                </li>
+
+                            <li class="apenas-mobile"><a href="javascript:void(0)" onclick="abrirFecharSideMenu()" title="TODAS AS CATEGORIAS" class="last">MENU <i class="fa fa-bars"></i></a>
+                                </li>
                             
                         </ul>
                     </nav>
@@ -207,24 +272,972 @@ ysyss
 <!-- HEADER -->
 
 
+<!-- HEADER FIXO -->
+<header class="fixo">
+        <!-- LOGO BUSCA E MINHA CONTA -->
+        <div class="logo-busca-minha-conta">
+            <div class="container">
+                <div class="row">
+                    <!-- LOGO -->
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 logo">
+                        <a href="#" title="Otimiza Shop Logo">
+                            <img src="images/logo.png" alt="Otimiza Shop Logo" />
+                        </a>
+                    </div>
+                    <!-- LOGO -->
+                    <!-- BUSCA -->
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 busca">
+                         <form method="post" action="">
+                             <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="Pesquise por produtos, marca, categoria ou segmento" required name="s">
+                                  <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="submit">
+                                        <img src="images/search.svg" />
+                                    </button>
+                                  </div>
+                            </div>
+                         </form>
+                    </div>
+                    <!-- BUSCA -->
+                    <!-- MINHA CONTA E CARRINHO -->
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 minha-conta-carrinho">
+                         <div class="row">
+                             <div class="col-9 minha-conta">
+                                 <h2>
+                                     <img src="images/minha-conta.svg" alt="Minha Conta" />
+                                     <a href="#" title="Entre">Entre</a> ou <a href="#" title="Cadastre-se">cadastre-se</a>
+                                     para ver seus pedidos
+                                 </h2>
+                             </div>
+                             <div class="col-3 carrinho-header text-center">
+                                 <a href="#" title="Meu Carrinho">
+                                     <img src="images/carrinho.svg" alt="" />
+                                 </a>
+                             </div>
+                         </div>
+                    </div>
+                    <!-- MINHA CONTA E CARRINHO -->
+                </div>
+            </div>
+        </div>
+        <!-- LOGO BUSCA E MINHA CONTA -->
+
+        <!-- MENU PRINCIPAL DESKTOP -->
+        <div class="menu-desktop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                         <nav>
+                            <ul>
+                                <li><a href="#" title="Home">Home</a></li>
+                                <li><a href="#">CICLISMO</a></li>
+                                <li><a href="#">CORRIDA</a></li>
+                                <li><a href="#">SKY</a></li>
+                                <li><a href="#">42</a></li>
+                                <li><a href="#">ACADEMIA</a></li>
+                                <li><a href="#">FUTEBOL</a></li>
+                                <li><a href="#">GAMES</a></li>
+                                <li><a href="#">YOGA</a></li>
+                                <li><a href="#">SURFE</a></li>
+                                <li><a href="#">VÔLEI</a></li>
+                                <li><a href="#">ESCALADA</a></li>
+                                <li><a href="#">DIA DOS PAIS</a></li>
+                                
+                                <li><a href="javascript:void(0)" onclick="abrirFecharSideMenu()" title="TODAS AS CATEGORIAS" class="last">TODAS AS CATEGORIAS <i class="fa fa-bars"></i></a>
+                                </li>
+
+                                <li class="apenas-mobile"><a href="javascript:void(0)" onclick="abrirFecharSideMenu()" title="TODAS AS CATEGORIAS" class="last">MENU <i class="fa fa-bars"></i></a>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MENU PRINCIPAL DESKTOP -->
+</header>
+
+
 <!-- SUPER BANNER -->
 <section class="super-banner">
-    
+    <div id="superBanner" class="owl-carousel owl-theme">
+        
+        <!-- PAGINA -->
+        <div class="item">
+            <a href="#" title="Clique para ir para a oferta">
+                <img src="images/banner1.png" alt="Título ou descricão do banner" />
+            </a>
+        </div>
+        <!-- PAGINA -->
+
+        <!-- PAGINA -->
+        <div class="item">
+            <a href="#" title="Clique para ir para a oferta">
+                <img src="images/banner1.png" alt="Título ou descricão do banner" />
+            </a>
+        </div>
+        <!-- PAGINA -->
+
+    </div>
 
 </section>
 <!-- SUPER BANNER -->
 
-
-<!-- PRIMEIRO DESTAQUE DE PRODUTOS -->
-<section class="primeiro-destaque-produto">
+<!-- LOOP -->
+<section class="loop">
     
+    <div class="container">
+        
+        <!-- TITULO -->
+        <div class="row">
+            <div class="col-12 titulo-sessao">
+                <h2>
+                    <img src="images/favicon.png" alt="OtimizaShop símbolo" /> DESTAQUES
+                </h2>
+            </div>
+        </div>
+        <!-- TITULO -->
+
+    </div>
+
+    <!-- LOOP EM SI -->
+    <div id="loopProdutos1" class="the-loop owl-carousel owl-theme">
+         
+         <!-- PRODUTO -->
+         <div class="ïtem">
+              <div class="produto">
+                  <!-- FOTO PRODUTO -->
+                  <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                      <a href="#" title="Nome do produto">
+                          &nbsp;
+                      </a>
+                  </div>
+                  <!-- FOTO PRODUTO -->
+                  <div class="info-produto">
+                      <h3>
+                          Bike fibra de Carbono KSW 2020 C
+                      </h3>
+                      <h2>
+                          R$ 20.000,00
+                          <small>
+                              Em até 12x de <span>R$ 200.00 <b>-25%</b></span>
+                          </small>
+                      </h2>
+                      
+                          <a href="#" title="COMPRAR" class="btn btn-primary">
+                              COMPRAR
+                          </a>
+                      
+                  </div>
+              </div>
+         </div>
+         <!-- PRODUTO -->
+
+         <!-- PRODUTO -->
+         <div class="ïtem">
+              <div class="produto">
+                  <!-- FOTO PRODUTO -->
+                  <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                      <a href="#" title="Nome do produto">
+                          &nbsp;
+                      </a>
+                  </div>
+                  <!-- FOTO PRODUTO -->
+                  <div class="info-produto">
+                      <h3>
+                          Bike fibra de Carbono KSW 2020 C
+                      </h3>
+                      <h2>
+                          R$ 399,90
+                          <small>
+                              Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                          </small>
+                      </h2>
+                      
+                          <a href="#" title="COMPRAR" class="btn btn-primary">
+                              COMPRAR
+                          </a>
+                      
+                  </div>
+              </div>
+         </div>
+         <!-- PRODUTO -->
+
+    </div>
+    <!-- LOOP EM SI -->
+
+    <div class="controle-banner-na-loop1">
+        <div class="owl-theme">
+            <div class="owl-controls">
+                <div id="#custom-nav-loop1" class="custom-nav-loop1 owl-nav"></div>
+            </div>
+        </div>
+    </div>
+
 </section>
-<!-- PRIMEIRO DESTAQUE DE PRODUTOS -->
+<!-- LOOP -->
+
+
+<!-- MINI BANNERS -->
+<section class="mini-banners">
+    <div class="container">
+        <div class="row">
+            <!-- MINI BANNER -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-sm-12 mini-banner wow fadeInDown" data-wow-delay="0.2s" data-wow-duration="1.0s">
+                <a href="#" title="Ver+">
+                    <img src="images/mini-banner-1.png" alt="Mini Banner" />
+                </a>
+            </div>
+            <!-- MINI BANNER -->
+            <!-- MINI BANNER -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-sm-12 mini-banner wow fadeInDown" data-wow-delay="0.4s" data-wow-duration="1.0s">
+                <a href="#" title="Ver+">
+                    <img src="images/mini-banner-2.png" alt="Mini Banner" />
+                </a>
+            </div>
+            <!-- MINI BANNER -->
+            <!-- MINI BANNER -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-sm-12 mini-banner wow fadeInDown" data-wow-delay="0.6s" data-wow-duration="1.0s">
+                <a href="#" title="Ver+">
+                    <img src="images/mini-banner-3.png" alt="Mini Banner" />
+                </a>
+            </div>
+            <!-- MINI BANNER -->
+        </div>
+    </div>
+</section>
+<!-- MINI BANNERS -->
+
+
+
+
+<!-- LOOP -->
+<section class="loop">
+    
+    <div class="container">
+        
+        <!-- TITULO -->
+        <div class="row">
+            <div class="col-12 titulo-sessao">
+                <h2>
+                    <img src="images/favicon.png" alt="OtimizaShop símbolo" /> ACABARAM DE CHEGAR
+                </h2>
+            </div>
+        </div>
+        <!-- TITULO -->
+
+        <!-- LOOP MENOR -->
+        <div class="row loop-menor">
+
+            <!-- BANNER VERTICAL -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 banner-vertical  wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="1.0s">
+                <a href="#" title="Banner Vertical">
+                    <img src="images/banner-vertical-1.png" alt="Banner vertical 1" style="width: 100%;height:auto;" />
+                </a>
+            </div>
+            <!-- BANNER VERTICAL -->
+            
+            <!-- PRODUTOS MENORES -->
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                 
+                 <div class="row">
+                     
+                    <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+
+                      <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+
+                     <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+
+
+                     <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+                     <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+
+                     <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+
+                 </div>
+
+            </div>
+            <!-- PRODUTOS MENORES -->
+
+        </div>
+        <!-- LOOP MENOR -->
+
+    </div>
+
+
+</section>
+<!-- LOOP -->
+
+
+
+
+
+
+<!-- LOOP -->
+<section class="loop">
+    
+    <div class="container">
+        
+        <!-- TITULO -->
+        <div class="row">
+            <div class="col-12 titulo-sessao">
+                <h2>
+                    <img src="images/favicon.png" alt="OtimizaShop símbolo" /> TODO MUNDO COMPRANDO
+                </h2>
+            </div>
+        </div>
+        <!-- TITULO -->
+
+        <!-- LOOP MENOR -->
+        <div class="row loop-menor">
+
+            <!-- PRODUTOS MENORES -->
+            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                 
+                 <div class="row">
+                     
+                      <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+
+                      <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+
+                     <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+
+
+                     <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+                     <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+
+                     <!-- PRODUTO -->
+                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                          <div class="produto">
+                              <!-- FOTO PRODUTO -->
+                              <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                                  <a href="#" title="Nome do produto">
+                                      &nbsp;
+                                  </a>
+                              </div>
+                              <!-- FOTO PRODUTO -->
+                              <div class="info-produto">
+                                  <h3>
+                                      Bike fibra de Carbono KSW 2020 C
+                                  </h3>
+                                  <h2>
+                                      R$ 399,90
+                                      <small>
+                                          Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                                      </small>
+                                  </h2>
+                                  
+                                      <a href="#" title="COMPRAR" class="btn btn-primary">
+                                          COMPRAR
+                                      </a>
+                                  
+                              </div>
+                          </div>
+                     </div>
+                     <!-- PRODUTO -->
+
+
+                 </div>
+
+            </div>
+            <!-- PRODUTOS MENORES -->
+
+
+            <!-- BANNER VERTICAL -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 banner-vertical wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="1.0s">
+                <a href="#" title="Banner Vertical">
+                    <img src="images/banner-vertical-2.png" alt="Banner vertical 2" style="width: 100%;height:auto;" />
+                </a>
+            </div>
+            <!-- BANNER VERTICAL -->
+
+        </div>
+        <!-- LOOP MENOR -->
+
+    </div>
+
+
+</section>
+<!-- LOOP -->
+
+
+
+
+
+
+<!-- LOOP -->
+<section class="loop">
+    
+    <div class="container">
+        
+        <!-- TITULO -->
+        <div class="row">
+            <div class="col-12 titulo-sessao">
+                <h2>
+                    <img src="images/favicon.png" alt="OtimizaShop símbolo" /> VOCÊ VAI GOSTAR
+                </h2>
+            </div>
+        </div>
+        <!-- TITULO -->
+
+    </div>
+
+    <!-- LOOP EM SI -->
+    <div id="loopProdutos2" class="the-loop owl-carousel owl-theme">
+         
+         <!-- PRODUTO -->
+         <div class="ïtem">
+              <div class="produto">
+                  <!-- FOTO PRODUTO -->
+                  <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                      <a href="#" title="Nome do produto">
+                          &nbsp;
+                      </a>
+                  </div>
+                  <!-- FOTO PRODUTO -->
+                  <div class="info-produto">
+                      <h3>
+                          Bike fibra de Carbono KSW 2020 C
+                      </h3>
+                      <h2>
+                          R$ 20.000,00
+                          <small>
+                              Em até 12x de <span>R$ 200.00 <b>-25%</b></span>
+                          </small>
+                      </h2>
+                      
+                          <a href="#" title="COMPRAR" class="btn btn-primary">
+                              COMPRAR
+                          </a>
+                      
+                  </div>
+              </div>
+         </div>
+         <!-- PRODUTO -->
+
+         <!-- PRODUTO -->
+         <div class="ïtem">
+              <div class="produto">
+                  <!-- FOTO PRODUTO -->
+                  <div class="foto-produto" style="background: url('images/produto.png') #f2f2f2 no-repeat;background-size: cover;background-position:center center;">
+                      <a href="#" title="Nome do produto">
+                          &nbsp;
+                      </a>
+                  </div>
+                  <!-- FOTO PRODUTO -->
+                  <div class="info-produto">
+                      <h3>
+                          Bike fibra de Carbono KSW 2020 C
+                      </h3>
+                      <h2>
+                          R$ 399,90
+                          <small>
+                              Em até 12x de <span>R$ 99.99 <b>-25%</b></span>
+                          </small>
+                      </h2>
+                      
+                          <a href="#" title="COMPRAR" class="btn btn-primary">
+                              COMPRAR
+                          </a>
+                      
+                  </div>
+              </div>
+         </div>
+         <!-- PRODUTO -->
+
+    </div>
+    <!-- LOOP EM SI -->
+
+    <div class="controle-banner-na-loop2">
+        <div class="owl-theme">
+            <div class="owl-controls">
+                <div id="#custom-nav-loop2" class="custom-nav-loop2 owl-nav"></div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- LOOP -->
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+    <!-- FRASE COM CALL TO ACTION -->
+    <div class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>
+                        AQUI UMA <b>FRASE DE PROMOÇÃO</b>, OFERTA, VANTAGEM, OU QUALQUER <a href="#" title="CALL TO ACTION">CALL TO ACTION</a> ESPECIAL <img src="images/truck.svg" alt="CALL TO ACTION" />
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FRASE COM CALL TO ACTION -->
+
+
+
+<!-- FOOTER -->
+<footer>
+    <!-- PALAVRAS CHAVES -->
+    <div class="keywords">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <h5>Palavras chaves:</h5>
+                    <p>
+                        Eletronicos:  Appleo Laptop  |  Acero Laptop  |  Samsing Laptop  |  Lenov Laptop  |  Sonyo Laptop  |  Delli Laptop  |  Asuso Laptop  |  Toshibao Laptop  |  LGG Laptop  |  HPO Laptop
+                    </p>
+                    <p>
+                        Marcas:  FUKIO Watches   |  Titan Watches   |  Casioo Watches   |  Fastrack Watches   |  Timexi Watches   |   Fossili Watches   |  Dieselo Watches   |  Toshibao Watches   |  Luxury Watches
+                    </p>
+                    <p>
+                        Vestuário:  Shoes   |  Casual Shoes   |  Sports Shoes  |  Adidasi Shoes   |  Gas Shoes   |  Pumai Shoes   |  Reeboki Shoes   |  Woodlandi Shoes   |  Red Tape Shoes   |  Nikeo Shoes
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PALAVRAS CHAVES -->
+    
+    <!-- CONTEUDO RODAPE -->
+    <div class="conteudo-rodape">
+        <div class="container">
+            <div class="row">
+                <!-- COLUNA UM -->
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 coluna-um">
+                    <h3>Fale com a gente</h3>
+                    <p>
+                        <i class="fa fa-envelope"></i> contato@otimizashop.com.br
+                    </p>
+                    <div class="logos">
+                        
+                        <p>
+                            <a href="#" title="OtimizaShop logo">
+                                <img src="images/logo.png" alt="OtimizaShop logo" />
+                            </a>
+                        </p>
+                        <p>
+                            <img src="images/logo-site-brlindado.png" alt="Logo site blindado" />
+                        </p>
+
+                    </div>
+                </div>
+                <!-- COLUNA UM -->
+                <!-- COLUNA DOIS -->
+                <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-12 coluna-dois">
+                    <div class="row">
+                        <!-- SUB COLUNA -->
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 colunas">
+                            <h3>Políticas e Termos</h3>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" title="">Termos e Condições</a></li>
+                                    <li><a href="#" title="">Política de troca</a></li>
+                                    <li><a href="#" title="">Política de uso</a></li>
+                                    <li><a href="#" title="">Frete e entrega</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- SUB COLUNA -->
+                        <!-- SUB COLUNA -->
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 colunas">
+                            <h3>Área do vendedor</h3>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" title="">Login</a></li>
+                                    <li><a href="#" title="">Cadastro</a></li>
+                                    <li><a href="#" title="">Manual de Uso</a></li>
+                                    <li><a href="#" title="">Controle de venda</a></li>
+                                    <li><a href="#" title="">Perguntas frequêntes</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- SUB COLUNA -->
+                        <!-- SUB COLUNA -->
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 colunas">
+                            <h3>Minha conta</h3>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" title="">Meus pedidos</a></li>
+                                    <li><a href="#" title="">Endereços</a></li>
+                                    <li><a href="#" title="">Meu perfil</a></li>
+                                    <li><a href="#" title="">Meus produtos</a></li>
+                                    <li><a href="#" title="">Favoritos</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- SUB COLUNA -->
+                        <!-- SUB COLUNA -->
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12 colunas">
+                            <h3>Newsletter</h3>
+                            <p>Cadastre na nossa newsletter para receber novidades e ofertas (não enviaremos spams)</p>
+                            
+                            <form method="post" action="">
+                                 <div class="input-group">
+                                      <input type="text" class="form-control" placeholder="Seu melhor e-mail" required name="email">
+                                      <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="submit">
+                                            <i class="fa fa-envelope"></i>
+                                        </button>
+                                      </div>
+                                </div>
+                             </form>
+
+                        </div>
+                        <!-- SUB COLUNA -->
+                    </div>
+                </div>
+                <!-- COLUNA DOIS -->
+            </div>
+        </div>
+    </div>
+    <!-- CONTEUDO RODAPE -->
+
+    <!-- CORPY -->
+    <div class="corpy">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Otimiza Shop 2020 - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CORPY -->
+
+</footer>
+<!-- FOOTER -->
 
 
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/tether.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <script type="text/javascript" src="js/sweetalert2.min.js"></script>
     <script type="text/javascript">

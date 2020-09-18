@@ -573,15 +573,10 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1190px;
+    max-width: 1160px;
   }
 }
 
-@media (min-width: 1260px) {
-  .container {
-    max-width: 1249px;
-  }
-}
 
 .container-fluid {
   width: 100%;
